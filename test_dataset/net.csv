@@ -1,0 +1,4 @@
+from,to,capacity (veh/hr),length (m),Free Flow Time (min),B,Power,Speed Limit,Toll,Type
+10,11,1000,612.679,60,0.15,4,0,0,A
+12,13,600,30.892,55,0.15,4,0,0,A
+14,15,2000,283.78599999999994,90,0.15,4,0,0,A
