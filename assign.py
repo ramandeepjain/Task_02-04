@@ -93,7 +93,7 @@ def MSA(graph, zone2centroid, demand, max_iterations=100, convergence_threshold=
     relative_gaps = []  # To track convergence
 
     # Step 1: Initial All-or-Nothing (AON) assignment
-    print("Running initial AON assignment...")
+    # print("Running initial AON assignment...")
     SPTT, x_bar, _, _ = AONloading(graph, zone2centroid, demand, compute_sptt=True)
 
     for iteration in range(1, max_iterations + 1):
@@ -116,7 +116,7 @@ def MSA(graph, zone2centroid, demand, max_iterations=100, convergence_threshold=
         relative_gap = abs(TSTT - SPTT) / SPTT
         relative_gaps.append(relative_gap)
         
-        print(f"Iteration {iteration}: Relative Gap = {relative_gap:.6f} TSTT = {TSTT}")
+        # print(f"Iteration {iteration}: Relative Gap = {relative_gap:.6f} TSTT = {TSTT}")
 
         # Check for convergence (relative gap < 0.05)
         if relative_gap < convergence_threshold:
